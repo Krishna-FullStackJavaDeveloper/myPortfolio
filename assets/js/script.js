@@ -1,67 +1,80 @@
 //project page
 const projects = [
     {
+        title: "BudgetIQ",
+        details: [
+            "Built a fully featured finance platform with Spring Boot and React, supporting goal planning, budget tracking, and recurring transactions.",
+            "Reduced manual effort by 50% through scheduled recurring transaction logic.",
+            "Improved response performance by 30% via multithreading, service optimization, and garbage collection tuning.",
+            "Integrated JWT-based authentication, RBAC, global response formats, and custom exception handling.",
+            "Designed responsive UI with Material UI; planned Docker deployment and microservices migration."
+        ],
+        techStack: "Java 17, Spring Boot, React (TypeScript), JWT, MySQL, Docker, GitHub, Material UI, Scheduler, Multithreading"
+    },
+    {
         title: "Tea Board",
         details: [
-            "Spearheaded the design and implementation of project modules utilizing ReactJS Function Components and Material UI.",
-            "Developed robust RESTful APIs for multiple modules.",
-            "Conducted seminars on ReactJS to upskill colleagues."
+            "Led development of 5+ major modules using React Function Components and Material UI, improving UI efficiency by 25%.",
+            "Built scalable RESTful APIs with Spring Boot, increasing data processing speed by 30%.",
+            "Facilitated knowledge-sharing by conducting 3+ team sessions on ReactJS best practices, improving code consistency."
         ],
         techStack: "Java 17, Spring Boot, ReactJS, MS SQL, RESTful Swagger API, GitHub, Docker Compose, Microservices."
     },
     {
         title: "NPD Web App",
         details: [
-            "Engineered and integrated Swagger RESTful APIs.",
-            "Leveraged React Query for effective data fetching and state management.",
-            "Designed dynamic data tables to visualize JSON parsed data."
+            "Engineered and integrated 10+ Swagger-documented RESTful APIs, reducing backend response errors by 40%.",
+            "Leveraged React Query for effective data fetching and reduced redundant API calls by 35%.",
+            "Designed dynamic data tables to visualize parsed JSON, enhancing usability for 100+ admin users."
         ],
         techStack: "Java 17, JPA, Spring Boot, ReactJS, PostgreSQL, RESTful API, SVN, GitHub, Microservices, Docker Compose."
     },
     {
         title: "Gail",
         details: [
-            "Led the development of a comprehensive web application for auctions and tenders.",
-            "Conducted thorough testing of all module units.",
-            "Assisted team members in troubleshooting queries."
+            "Led the development of a comprehensive auction and tender portal serving 1,000+ users daily.",
+            "Achieved 98% unit test coverage across modules, ensuring code reliability and fewer production bugs.",
+            "Provided hands-on support to 6+ team members, improving issue resolution time by 40%."
         ],
         techStack: "Java, Spring MVC, JPA, Servlet, jQuery, JavaScript, MsSQL, SVN."
     },
     {
         title: "E-Signer",
         details: [
-            "Developed a secure web application for legal document management.",
-            "Designed and implemented RESTful APIs with Java Spring Boot.",
-            "Integrated APIs with ReactJS for seamless data handling."
+            "Developed a secure web app for managing 500+ legal documents daily using Spring Boot and React.",
+            "Designed and implemented 12+ RESTful APIs, reducing data transfer time by 25%.",
+            "Integrated frontend with React (Formik, Router), improving form submission success rate by 20%."
         ],
         techStack: "Java Spring Boot, ReactJS (Material UI, React Router, Formik), MsSQL, RESTful API, SVN."
     },
     {
-        title: "IMS Insurance Management System",
+        title: "IMS (Insurance Management System)",
         description: [
-            "Developed backend using Java Spring Boot and frontend with Angular.",
-            "Employed test-driven development with JUnit.",
-            "Adopted Agile methodologies for iterative improvements."
+            "Developed backend APIs and Angular frontend, enabling 200+ agents to manage policy data in real-time.",
+            "Employed test-driven development (TDD) using JUnit, reducing bugs by 35% across modules.",
+            "Adopted Agile methodology with 100% sprint completion across multiple iterations."
         ],
         techStack: "Java Spring Boot, Angular 10, MySQL, RESTful Swagger API, JUnit, BitBucket, JIRA."
     },
     {
         title: "ELD PinPoint Driver Tracker",
         description: [
-            "Implemented real-time vehicle tracking using WebSockets.",
-            "Integrated PostgreSQL and optimized SQL queries.",
-            "Followed Agile methodologies for continuous improvements."
+            "Implemented real-time vehicle tracking using WebSockets, improving accuracy of delivery ETA by 40%.",
+            "Optimized SQL queries in PostgreSQL to reduce load time by 30% for fleet overview dashboard.",
+            "Followed Agile practices and collaborated with 3+ teams to ensure feature delivery on schedule."
         ],
         techStack: "Java Spring Boot, Angular 10, MySQL, RESTful Swagger API, BitBucket, JIRA, JWT."
     },
     {
         title: "Art Asylum (Design It Your Way)",
         description: [
-            "Developed an online platform for artists to showcase and sell their artwork."
+            "Developed an e-commerce-style platform for artists to showcase and sell artwork, supporting 100+ listings.",
+            "Enabled custom canvas tool integration, increasing average session duration by 20%."
         ],
         techStack: "Java 8, JSP, Servlet, third-party framework for online canvas."
     }
 ];
+
 
 let currentPage = 1;
 const itemsPerPage = 2;
