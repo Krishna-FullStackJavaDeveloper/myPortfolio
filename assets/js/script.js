@@ -3,13 +3,17 @@ const projects = [
     {
         title: "BudgetIQ",
         details: [
-            "Built a fully featured finance platform with Spring Boot and React, supporting goal planning, budget tracking, and recurring transactions.",
-            "Reduced manual effort by 50% through scheduled recurring transaction logic.",
-            "Improved response performance by 30% via multithreading, service optimization, and garbage collection tuning.",
-            "Integrated JWT-based authentication, RBAC, global response formats, and custom exception handling.",
-            "Designed responsive UI with Material UI; planned Docker deployment and microservices migration."
+            "Developed a personal finance web app for 100+ users to manage income, expenses, and savings goals.",
+            "Automated recurring transactions and smart scheduling, reducing manual input by 50%.",
+            "Implemented a Goal Tracker to help users plan and monitor financial objectives.",
+            "Optimized backend and API performance with multithreading, service logic optimization, and garbage collection tuning, achieving 30% faster data retrieval.",
+            "Enhanced maintainability with global response formatting and centralized exception handling, improving code reuse by 40%.",
+            "Built a modular, responsive UI using React and Material UI, improving interaction efficiency by 25%.",
+            "Implemented secure authentication with OAuth2, JWT, role-based access control, and 2FA.",
+            "Applied JUnit 5, Mockito, Testcontainers, REST Assured, and JaCoCo for robust unit and integration testing.",
+            "Containerized the application with Docker for streamlined deployment."
         ],
-        techStack: "Java 17, Spring Boot, React (TypeScript), JWT, MySQL, Docker, GitHub, Material UI, Scheduler, Multithreading"
+        techStack: "Java, Spring Boot, React (TypeScript), JWT, OAuth2, MySQL, Material UI, Docker, GitHub, JaCoCo"
     },
     {
         title: "Tea Board",
