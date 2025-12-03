@@ -1,6 +1,18 @@
 //project page
 const projects = [
     {
+        title: "StrongPass Generator",
+        details: [
+            "Developed a full-stack secure password generator supporting real-time customizable options (letters per word, number of words, symbols, numbers, capitalization).",
+            "Built frontend with React (TypeScript) and Material UI, backend with Spring Boot, communicating via REST APIs.",
+            "Implemented Dockerized deployment for both frontend and backend using docker-compose.",
+            "Configured CORS, global response formatting, and centralized exception handling for robust API communication.",
+            "Applied TDD with JUnit 5 and REST Assured to ensure reliability of password generation logic.",
+            "Designed a responsive, user-friendly UI with clear error handling for secure and easy usage."
+        ],
+        techStack: "Java, Spring Boot, React (TypeScript), Material UI, Docker, GitHub, JUnit 5, REST Assured"
+    },
+    {
         title: "BudgetIQ",
         details: [
             "Developed a personal finance web app for 100+ users to manage income, expenses, and savings goals.",
