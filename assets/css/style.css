@@ -784,3 +784,9 @@ a {
     font-weight: 500;
     text-decoration: underline;
 }
+
+.media-content iframe {
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+}

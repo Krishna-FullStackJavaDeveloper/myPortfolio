@@ -18,7 +18,9 @@ const projects = [
             "assets/media/strongpass/Dockerized full-stack setup using Docker Compose.png",
             "assets/media/strongpass/Generated Password Output.png",
         ],
-        video: "assets/media/strongpass/StrongPass Generator - Web App.mp4"
+        // video: "assets/media/strongpass/StrongPass Generator - Web App.mp4"
+        video: "https://www.youtube.com/embed/9lGFqyc9Uj4"
+
     }
     },
     {
@@ -168,8 +170,10 @@ function openMediaModal(index) {
 
     // Combine video and images into one array
     currentProjectMedia = [];
-    if (media.video) currentProjectMedia.push({ type: "video", src: media.video });
+    
+    
     media.images.forEach(img => currentProjectMedia.push({ type: "image", src: img }));
+    if (media.video) currentProjectMedia.push({ type: "video", src: media.video });
 
     currentMediaIndex = 0;
     showMedia();
@@ -184,12 +188,25 @@ function showMedia() {
     if (!mediaItem) return;
 
     if (mediaItem.type === "video") {
+        // If YouTube embed link
+       if (mediaItem.type === "video") {
+    if (mediaItem.src.includes("youtube.com/embed")) {
+        // Fallback: thumbnail + link
         container.innerHTML = `
-            <video controls>
+            <a href="https://www.youtube.com/watch?v=9lGFqyc9Uj4" target="_blank" style="color:white; font-size:20px; text-decoration:none;">
+                ▶ Watch Video on YouTube
+            </a>
+        `;
+    } else {
+        container.innerHTML = `
+            <video controls autoplay style="max-width:95%; max-height:95%;">
                 <source src="${mediaItem.src}" type="video/mp4">
             </video>
         `;
+    }
+}
     } else {
+        // Image
         container.innerHTML = `<img src="${mediaItem.src}" alt="Project Screenshot">`;
     }
 }
