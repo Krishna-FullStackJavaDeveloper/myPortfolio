@@ -10,7 +10,16 @@ const projects = [
             "Applied TDD with JUnit 5 and REST Assured to ensure reliability of password generation logic.",
             "Designed a responsive, user-friendly UI with clear error handling for secure and easy usage."
         ],
-        techStack: "Java, Spring Boot, React (TypeScript), Material UI, Docker, GitHub, JUnit 5, REST Assured"
+        techStack: "Java, Spring Boot, React (TypeScript), Material UI, Docker, GitHub",
+        media: {
+        images: [
+            "assets/media/strongpass/StrongPass Generator – Real-time secure password customization.png",
+            "assets/media/strongpass/Secure password generated instantly based on user preferences.png",
+            "assets/media/strongpass/Dockerized full-stack setup using Docker Compose.png",
+            "assets/media/strongpass/Generated Password Output.png",
+        ],
+        video: "assets/media/strongpass/StrongPass Generator - Web App.mp4"
+    }
     },
     {
         title: "BudgetIQ",
@@ -107,15 +116,21 @@ function displayProjects() {
         let projectItem = document.createElement("div");
         projectItem.classList.add("projects-item");
         
-        projectItem.innerHTML = `
-        <div class="left-content">
-            <h2>${project.title}</h2>
-        </div>
-        <div class="right-content">
-            <ul>${(project.details || project.description || []).map(detail => `<li>${detail}</li>`).join('')}</ul>
-            <p><strong>Tech Stack:</strong> ${project.techStack}</p>
-        </div>
-    `;
+       projectItem.innerHTML = `
+    <div class="left-content">
+        <h2>${project.title}</h2>
+    </div>
+    <div class="right-content">
+        <ul>${(project.details || project.description || []).map(detail => `<li>${detail}</li>`).join('')}</ul>
+        <p><strong>Tech Stack:</strong> ${project.techStack}</p>
+
+        ${project.media ? `
+            <a href="#" class="media-link" onclick="openMediaModal(${projects.indexOf(project)})">
+                📸 View Media
+            </a>
+        ` : ""}
+    </div>
+`;
         
         container.appendChild(projectItem);
     });
@@ -139,6 +154,62 @@ document.getElementById("nextPage").addEventListener("click", () => {
 
 displayProjects();
 
+let currentMediaIndex = 0;
+let currentProjectMedia = [];
+
+function openMediaModal(index) {
+    const modal = document.getElementById("mediaModal");
+    const container = document.getElementById("mediaContainer");
+
+    if (!modal || !container) return;
+
+    const media = projects[index].media;
+    if (!media) return;
+
+    // Combine video and images into one array
+    currentProjectMedia = [];
+    if (media.video) currentProjectMedia.push({ type: "video", src: media.video });
+    media.images.forEach(img => currentProjectMedia.push({ type: "image", src: img }));
+
+    currentMediaIndex = 0;
+    showMedia();
+
+    modal.style.display = "block";
+}
+
+function showMedia() {
+    const container = document.getElementById("mediaContainer");
+    const mediaItem = currentProjectMedia[currentMediaIndex];
+
+    if (!mediaItem) return;
+
+    if (mediaItem.type === "video") {
+        container.innerHTML = `
+            <video controls>
+                <source src="${mediaItem.src}" type="video/mp4">
+            </video>
+        `;
+    } else {
+        container.innerHTML = `<img src="${mediaItem.src}" alt="Project Screenshot">`;
+    }
+}
+
+function nextMedia() {
+    currentMediaIndex = (currentMediaIndex + 1) % currentProjectMedia.length;
+    showMedia();
+}
+
+function prevMedia() {
+    currentMediaIndex = (currentMediaIndex - 1 + currentProjectMedia.length) % currentProjectMedia.length;
+    showMedia();
+}
+
+function closeMediaModal() {
+    const modal = document.getElementById("mediaModal");
+    modal.style.display = "none";
+    currentProjectMedia = [];
+}
+
 // Staggered animation function
 function staggeredAnimation() {
     const items = document.querySelectorAll('.experience-item'); // Select all experience items
@@ -147,6 +218,11 @@ function staggeredAnimation() {
         item.classList.add('fade-inside'); // Add the class to trigger the fade-in animation
     });
 }
+
+window.addEventListener("click", (e) => {
+    const modal = document.getElementById("mediaModal");
+    if (e.target === modal) closeMediaModal();
+});
 
 // Trigger the staggered animation on page load
 window.addEventListener('load', staggeredAnimation);

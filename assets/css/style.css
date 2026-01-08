@@ -722,3 +722,65 @@ a {
     }
 }
 
+/* 08-01-2026 */
+.media-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95); /* dark overlay */
+    overflow: hidden;
+}
+
+.media-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-content img,
+.media-content video {
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+    object-fit: contain; /* keeps aspect ratio */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+    user-select: none;
+    z-index: 100;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.media-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4da3ff;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+}
