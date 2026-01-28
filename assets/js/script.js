@@ -39,7 +39,7 @@ const projects = [
         techStack: "Java, Spring Boot, React (TypeScript), JWT, OAuth2, MySQL, Material UI, Docker, GitHub, JaCoCo"
     },
     {
-        title: "Tea Board",
+        title: "Praj",
         details: [
             "Led development of 5+ major modules using React Function Components and Material UI, improving UI efficiency by 25%.",
             "Built scalable RESTful APIs with Spring Boot, increasing data processing speed by 30%.",
