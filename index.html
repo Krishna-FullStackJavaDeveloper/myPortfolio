@@ -1,109 +1,1123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon/devicon.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Krishna Bhatt - Full Stack Java Developer with 5+ years of experience in Canada"
+    />
+    <title>Krishna Bhatt - Full Stack Java Developer</title>
 
-    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Krishna Bhatt - Portfolio</title>
-</head>
-<body class="background-watermark">
-    <header>
-        <div class="logo">
-            <span class="blue-point"></span>
-            <div class="header-title">
-                <span class="header-name">Krishna Bhatt | 
-                <span class="header-role">Full Stack Developer</span> </span>
-            </div>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#home">Krishna Bhatt</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <nav class="links">
-            <ul>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certification.html">Certification</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="about-container">
-                <img src="assets/images/profile.png" alt="Profile picture of Krishna Bhatt" class="profile-img">
-                <div class="about-content">
-                    <h1 class="font-0">Hello</h1>
-                    <h2 class="font-4">A Bit About Me</h2>
-                   <p class="about-text font-8">
-                        I am a Full Stack Java Developer with 5+ years of experience building scalable, high-performance web applications using Java, Spring Boot, React, and Microservices. I specialize in JWT, OAuth2, Docker, CI/CD, multithreading, and performance optimization.
-                        <br><br>
-                        Recently, I developed <strong>StrongPass Generator</strong>, a secure full-stack password generator with real-time customizable options, and <strong>BudgetIQ</strong>, a personal finance platform used by 100+ users with automated transactions and 2FA authentication.
-                        <br><br>
-                        Passionate about clean, maintainable code, I enjoy delivering impactful projects and collaborating in teams across Canada.
-                        <br><br>
-                        <strong>Tech Highlights:</strong> Java, Spring Boot, React, Microservices, Docker, JWT, OAuth2, MySQL/PostgreSQL, Material UI.
-                    </p>
-                    <div class="links">
-                        <a href="resume/Krishna_Bhatt.pdf" class="circle-button resume"  target="_blank">Resume</a>
-                        <a href="projects.html" class="circle-button projects">Projects</a>
-                        <a href="contact.html" class="circle-button contact">Contact</a>
-                    </div>
-                </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-section min-vh-100 d-flex align-items-center"
+    >
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="d-flex align-items-center gap-2 text-muted mb-3">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Canada (Permanent Resident)</span>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <p>©2024 <span> By  Krishna Bhatt.</span></p>
-                <p> All Rights Reserved.</p>
-            </div>
-            <div class="footer-column">
-            </div>
-            <div class="footer-column">
-                <h3>Resume</h3>
-                <p class="social-icons">
-                    <a href="resume/Krishna_Bhatt.pdf" target="_blank">
-                        <i class="fa-solid fa-file-pdf"></i>
-                    </a>
-                </p>
-            </div>
-            <div class="footer-column">
-                <h3>Email</h3>
-                <p class="social-icons">
-                    <a href="mailto:krishnampandya@gmail.com" target="_blank">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                
-                </p>
-            </div>
-            <div class="footer-column">
-                <h3>Follow Me</h3>
-                <p>
-                    <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/krishnabhatt-fullstackdeveloper/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Krishna-FullStackJavaDeveloper" target="_blank">
-                    <i class="fa-brands fa-github"></i> 
-                    </a>
-                </div>
+            <h1 class="display-3 fw-bold mb-3">Hi, I'm Krishna Bhatt</h1>
+            <h2 class="display-6 text-primary mb-4">
+              Full Stack Java Developer
+            </h2>
+            <p class="lead text-muted mb-4">
+              Passionate software engineer with 5+ years of experience building
+              scalable, high-performance applications. Specializing in Java,
+              Spring Boot, React, and microservices-based architecture.
             </p>
-            
+            <div class="d-flex gap-3 mb-4 flex-wrap">
+              <a href="#contact" class="btn btn-primary btn-lg px-4"
+                >Get In Touch</a
+              >
+              <a
+                href="src/imports/Krishna_Bhatt.pdf"
+                target="_blank"
+                download
+                class="btn btn-outline-primary btn-lg px-4"
+                >Download CV</a
+              >
             </div>
+            <div class="d-flex gap-3">
+              <a
+                href="https://github.com/Krishna-FullStackJavaDeveloper"
+                target="_blank"
+                class="social-icon bg-dark"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/krishnabhatt-fullstackdeveloper/"
+                target="_blank"
+                class="social-icon bg-primary"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="mailto:krishnampandya@gmail.com"
+                class="social-icon"
+                style="background-color: #7c3aed"
+              >
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="position-relative">
+              <div
+                class="hero-image-wrapper rounded-4 overflow-hidden shadow-lg"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc0OTUwNjM4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Professional workspace"
+                  class="w-100 h-100 object-fit-cover"
+                />
+                <div class="hero-image-overlay"></div>
+              </div>
+              <div class="experience-badge">
+                <div class="text-center">
+                  <div class="fs-1 fw-bold text-primary">5+</div>
+                  <div class="small text-muted">Years Experience</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-       
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">About Me</h2>
+          <div class="title-underline mx-auto"></div>
+        </div>
+
+        <div class="row align-items-center g-5 mb-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img
+              src="https://images.unsplash.com/photo-1687603858673-a08a2dc2302c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXZhJTIwcHJvZ3JhbW1pbmclMjBjb2RlfGVufDF8fHx8MTc3NDg1NTUyMnww&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Java programming"
+              class="rounded-4 shadow-lg w-100"
+              style="height: 400px; object-fit: cover"
+            />
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <p class="lead text-muted mb-3">
+              I'm a dedicated Full Stack Java Developer based in Canada with
+              over 5 years of professional experience in software development.
+              My passion lies in creating robust, scalable applications that
+              solve real-world problems.
+            </p>
+            <p class="lead text-muted mb-3">
+              Throughout my career, I've worked on diverse projects ranging from
+              enterprise applications to cloud-native solutions. I specialize in
+              Java ecosystem technologies including Spring Boot, Hibernate, JPA,
+              and microservices architecture.
+            </p>
+            <p class="lead text-muted">
+              On the frontend, I'm proficient in React, Angular, and modern
+              JavaScript frameworks, enabling me to deliver complete end-to-end
+              solutions. I have hands-on experience in Docker and containerized
+              application development, with ongoing learning in cloud platforms
+              (AWS, Azure) and container orchestration using Kubernetes.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="about-card h-100">
+              <i class="bi bi-code-slash about-icon"></i>
+              <h5 class="fw-bold mb-2">Full Stack Development</h5>
+              <p class="text-muted mb-0">
+                Expert in building end-to-end web applications with modern
+                frameworks
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="about-card h-100">
+              <i class="bi bi-hdd-network about-icon"></i>
+              <h5 class="fw-bold mb-2">Backend Architecture</h5>
+              <p class="text-muted mb-0">
+                Designing scalable microservices and RESTful APIs
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="about-card h-100">
+              <i class="bi bi-database-fill about-icon"></i>
+              <h5 class="fw-bold mb-2">Database Management</h5>
+              <p class="text-muted mb-0">
+                Proficient in SQL and NoSQL database design and optimization
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="about-card h-100">
+              <i class="bi bi-briefcase-fill about-icon"></i>
+              <h5 class="fw-bold mb-2">Agile Methodology</h5>
+              <p class="text-muted mb-0">
+                Experienced in Scrum, CI/CD, and collaborative development
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">Skills & Expertise</h2>
+          <div class="title-underline mx-auto"></div>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <!-- Backend Skills -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="skill-category-card h-100">
+              <h4 class="fw-bold mb-4">Backend</h4>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Java</span>
+                  <span class="text-primary fw-semibold">95%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Spring Boot</span>
+                  <span class="text-primary fw-semibold">90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Hibernate/JPA</span>
+                  <span class="text-primary fw-semibold">85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Microservices</span>
+                  <span class="text-primary fw-semibold">70%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Node.js</span>
+                  <span class="text-primary fw-semibold">50%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 50%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend Skills -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-category-card h-100">
+              <h4 class="fw-bold mb-4">Frontend</h4>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>React</span>
+                  <span class="text-primary fw-semibold">88%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Angular</span>
+                  <span class="text-primary fw-semibold">82%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 82%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>TypeScript</span>
+                  <span class="text-primary fw-semibold">85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>JavaScript</span>
+                  <span class="text-primary fw-semibold">90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>HTML/CSS</span>
+                  <span class="text-primary fw-semibold">92%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database Skills -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-category-card h-100">
+              <h4 class="fw-bold mb-4">Database</h4>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>MySQL</span>
+                  <span class="text-primary fw-semibold">90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>PostgreSQL</span>
+                  <span class="text-primary fw-semibold">50%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 50%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>MongoDB</span>
+                  <span class="text-primary fw-semibold">30%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 30%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Redis</span>
+                  <span class="text-primary fw-semibold">40%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 40%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Oracle</span>
+                  <span class="text-primary fw-semibold">30%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 30%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DevOps Skills -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-category-card h-100">
+              <h4 class="fw-bold mb-4">DevOps & Tools</h4>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Docker</span>
+                  <span class="text-primary fw-semibold">70%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Git</span>
+                  <span class="text-primary fw-semibold">82%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 82%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>AWS</span>
+                  <span class="text-primary fw-semibold">30%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 30%"></div>
+                </div>
+                <div class="skill-item mb-3">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>Kubernetes</span>
+                    <span class="text-primary fw-semibold">20%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 20%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Jenkins</span>
+                  <span class="text-primary fw-semibold">20%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 20%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="text-center" data-aos="fade-up">
+          <div class="skill-category-card">
+            <h4 class="fw-bold mb-4">Technologies & Tools</h4>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Angular</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">AWS</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Kubernetes</span>
+              <span class="tech-badge">Microservices</span>
+              <span class="tech-badge">RESTful API</span>
+              <span class="tech-badge">GraphQL</span>
+              <span class="tech-badge">Git</span>
+              <span class="tech-badge">Jenkins</span>
+              <span class="tech-badge">Maven</span>
+              <span class="tech-badge">Gradle</span>
+              <span class="tech-badge">Redis</span>
+              <span class="tech-badge">Kafka</span>
+              <span class="tech-badge">RabbitMQ</span>
+              <span class="tech-badge">JUnit</span>
+              <span class="tech-badge">Mockito</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">Work Experience</h2>
+          <div class="title-underline mx-auto"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="d-flex align-items-center gap-2 text-primary mb-2">
+                <i class="bi bi-calendar3"></i>
+                <span class="fw-semibold">Jun 2025 - Present</span>
+              </div>
+              <h4 class="fw-bold mb-2">Full Stack Developer</h4>
+              <div class="d-flex align-items-center gap-2 text-muted mb-3">
+                <i class="bi bi-briefcase"></i>
+                <span>Independent Projects • Ontario, Canada</span>
+              </div>
+              <p class="text-muted mb-3">
+                Engineered secure and scalable full-stack applications,
+                delivering seamless user experiences and high-performance
+                platforms with modern security and automated testing.
+              </p>
+              <ul class="text-muted">
+                <li>
+                  Built BudgetIQ for 100+ users with automated transactions,
+                  goal tracking, and 2FA, boosting backend efficiency.
+                </li>
+                <li>
+                  Developed StrongPass Generator, a secure password manager with
+                  REST API, React frontend, Docker deployment, and full test
+                  coverage.
+                </li>
+                <li>
+                  Implemented JWT, OAuth2, and role-based access control with
+                  modular, responsive interfaces.
+                </li>
+                <li>
+                  Expanded microservices expertise with Spring Cloud,
+                  Kubernetes, Helm, and security best practices.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="d-flex align-items-center gap-2 text-primary mb-2">
+                <i class="bi bi-calendar3"></i>
+                <span class="fw-semibold">Aug 2022 - Dec 2024</span>
+              </div>
+              <h4 class="fw-bold mb-2">Senior Full Stack Java Developer</h4>
+              <div class="d-flex align-items-center gap-2 text-muted mb-3">
+                <i class="bi bi-briefcase"></i>
+                <span
+                  >E-Procurement Technologies Ltd. (EPTL) • Gujarat, India</span
+                >
+              </div>
+              <p class="text-muted mb-3">
+                Led full-stack development of enterprise applications,
+                accelerating release cycles, improving code quality, and
+                enhancing user experience across platforms.
+              </p>
+              <ul class="text-muted">
+                <li>
+                  Delivered 4 enterprise apps with modular design, increasing
+                  release speed by 20%.
+                </li>
+                <li>
+                  Reduced production bugs by 35% through integration testing and
+                  proactive QA practices.
+                </li>
+                <li>
+                  Designed REST APIs and mentored 15+ developers, improving team
+                  efficiency and code quality by 30%.
+                </li>
+                <li>
+                  Built critical modules with secure workflows, cutting
+                  post-release defects by 40% and boosting user satisfaction by
+                  30%.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="d-flex align-items-center gap-2 text-primary mb-2">
+                <i class="bi bi-calendar3"></i>
+                <span class="fw-semibold">Jan 2020 - Jul 2022</span>
+              </div>
+              <h4 class="fw-bold mb-2">Software Engineer</h4>
+              <div class="d-flex align-items-center gap-2 text-muted mb-3">
+                <i class="bi bi-briefcase"></i>
+                <span
+                  >Entrust Software Development • California, USA (Remote)</span
+                >
+              </div>
+              <p class="text-muted mb-3">
+                Developed and optimized high-performance enterprise
+                applications, enhancing operational efficiency and delivering
+                dynamic, maintainable frontends and backends.
+              </p>
+              <ul class="text-muted">
+                <li>
+                  Engineered Spring Boot and React/Angular systems for IMS
+                  Insurance and ELD PinPoint Tracker, streamlining client
+                  operations.
+                </li>
+                <li>
+                  Optimized APIs and implemented server-side caching, reducing
+                  response times by 40%.
+                </li>
+                <li>
+                  Integrated real-time vehicle tracking with WebSockets and SSE,
+                  improving fleet visibility by 50%.
+                </li>
+                <li>
+                  Achieved 85% TDD coverage, ensuring 95% on-time sprint
+                  delivery across 10 consecutive sprints.
+                </li>
+                <li>
+                  Created reusable reporting modules, cutting future development
+                  effort by 60%.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 4 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="d-flex align-items-center gap-2 text-primary mb-2">
+                <i class="bi bi-calendar3"></i>
+                <span class="fw-semibold">Jun 2017 - Dec 2017</span>
+              </div>
+              <h4 class="fw-bold mb-2">Software Engineer Intern</h4>
+              <div class="d-flex align-items-center gap-2 text-muted mb-3">
+                <i class="bi bi-briefcase"></i>
+                <span
+                  >Silverwing's Technologies Pvt. Ltd. • Gujarat, India</span
+                >
+              </div>
+              <p class="text-muted mb-3">
+                Engineered responsive, high-performance websites, delivering
+                polished user experiences and measurable speed improvements.
+              </p>
+              <ul class="text-muted">
+                <li>
+                  Developed 5+ client-ready responsive websites using HTML, CSS,
+                  Bootstrap, and JavaScript.
+                </li>
+                <li>
+                  Optimized page load performance by 35%, enhancing overall user
+                  experience.
+                </li>
+                <li>
+                  Maintained 99.9% uptime, ensuring reliable access for users.
+                </li>
+                <li>
+                  Collaborated in teams, refining designs through client
+                  feedback.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">Featured Projects</h2>
+          <div class="title-underline mx-auto"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="project-card h-100">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1604591259403-81d6c9cf87d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzc0OTY2NzUxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Personal Finance Tracker"
+                  class="w-100"
+                />
+                <div class="project-overlay"></div>
+              </div>
+              <div class="project-content">
+                <h4 class="fw-bold mb-3">
+                  BudgetIQ — Personal Finance Tracker
+                </h4>
+                <p class="text-muted mb-3">
+                  Built BudgetIQ, a full-stack personal finance platform
+                  empowering users to track income, expenses, savings goals, and
+                  automated recurring transactions — reducing manual effort by
+                  50% and delivering actionable insights.
+                </p>
+                <div class="mb-3">
+                  <h6 class="fw-semibold mb-2">Key Features:</h6>
+                  <ul class="text-muted small">
+                    <li>
+                      Secure authentication with JWT, OAuth2, and 2FA for robust
+                      user protection
+                    </li>
+                    <li>
+                      Income & expense tracking with interactive charts and
+                      advanced filtering
+                    </li>
+                    <li>
+                      Real-time goal visualization and progress monitoring
+                    </li>
+                    <li>
+                      Automated recurring transactions with smart scheduling
+                    </li>
+                    <li>
+                      Role-based access (User, Family Admin, System Admin) for
+                      controlled multi-user management
+                    </li>
+                    <li>
+                      Advanced reports with PDF/CSV export and family sharing
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-primary">Java</span>
+                  <span class="badge bg-primary">Spring Boot</span>
+                  <span class="badge bg-primary">React (TypeScript)</span>
+                  <span class="badge bg-primary">MySQL</span>
+                  <span class="badge bg-primary">Material UI</span>
+                  <span class="badge bg-primary">Docker</span>
+                  <span class="badge bg-primary">JWT</span>
+                  <span class="badge bg-primary">OAuth2</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/Krishna-FullStackJavaDeveloper/BudgetIQ"  target="_blank" class="btn btn-dark btn-sm">
+                    <i class="bi bi-github me-1"></i> Code
+                  </a>
+                  <a href="https://www.youtube.com/playlist?list=PLsLihlwfRPdswap2pazvcyq-itDB6t4A2"  target="_blank" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card h-100">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1697382089008-642dd4b9024b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB0b3JvbnRvfGVufDF8fHx8MTc3NDk2Njc1MHww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Secure Password Web App"
+                  class="w-100"
+                />
+                <div class="project-overlay"></div>
+              </div>
+              <div class="project-content">
+                <h4 class="fw-bold mb-3">StrongPass Generator — Secure Password Web App</h4>
+                <p class="text-muted mb-3">
+                  Developed StrongPass Generator, a full-stack secure password web application that
+                  empowers users to generate customizable, high-strength passwords in real time, 
+                  backed by a fully tested and Dockerized architecture.
+                </p>
+                <div class="mb-3">
+                  <h6 class="fw-semibold mb-2">Key Features:</h6>
+                  <ul class="text-muted small">
+                   <li>Real-time password generation with customizable criteria for enhanced security</li>
+                    <li>Robust backend powered by Spring Boot with standardized REST APIs and global exception handling</li>
+                    <li>Interactive React + TypeScript frontend with Material UI for smooth user experience</li>
+                    <li>Fully containerized frontend and backend with Docker Compose for easy deployment</li>
+                    <li>Comprehensive unit and integration testing using JUnit 5, Mockito, REST Assured, and JaCoCo</li>
+                </ul>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                   <span class="badge bg-primary">Java</span>
+                    <span class="badge bg-primary">Spring Boot</span>
+                    <span class="badge bg-primary">React (TypeScript)</span>
+                    <span class="badge bg-primary">Material UI</span>
+                    <span class="badge bg-primary">Docker</span>
+                    <span class="badge bg-primary">JUnit 5</span>
+                    <span class="badge bg-primary">REST Assured</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/Krishna-FullStackJavaDeveloper/Password_Generator" target="_blank" class="btn btn-dark btn-sm">
+                    <i class="bi bi-github me-1"></i> Code
+                  </a>
+                  <a href="https://youtu.be/9lGFqyc9Uj4" target="_blank" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card h-100">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1687603858673-a08a2dc2302c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXZhJTIwcHJvZ3JhbW1pbmclMjBjb2RlfGVufDF8fHx8MTc3NDg1NTUyMnww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="HashInk"
+                  class="w-100"
+                />
+                <div class="project-overlay"></div>
+              </div>
+              <div class="project-content">
+                <h4 class="fw-bold mb-3">HashInk — E-Signer and Employee Management System </h4>
+                <p class="text-muted mb-3">
+                  Developing HashInk, a comprehensive E-Signer and employee management platform 
+                  that streamlines document workflows, employee operations, and secure approvals. 
+                  Backend is fully implemented with 200+ REST APIs, while frontend development is ongoing in React.
+                </p>
+                <div class="mb-3">
+                  <h6 class="fw-semibold mb-2">Key Features:</h6>
+                  <ul class="text-muted small">
+                    <li>Secure electronic signature system with PDF signing and QR code generation</li>
+                    <li>Employee management system with role-based workflows and REST API access</li>
+                    <li>Email notifications for approvals, reminders, and workflow updates</li>
+                    <li>PDF handling using iText and PDFBox for document processing</li>
+                    <li>Comprehensive API documentation via Swagger/OpenAPI for easy exploration</li>
+                    <li>Input validation, logging, and security measures using Spring Boot Validation, Log4j2, and BouncyCastle</li>
+                </ul>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-primary">Java 17</span>
+                    <span class="badge bg-primary">Spring Boot</span>
+                    <span class="badge bg-primary">MySQL</span>
+                    <span class="badge bg-primary">iText</span>
+                    <span class="badge bg-primary">PDFBox</span>
+                    <span class="badge bg-primary">ZXing</span>
+                    <span class="badge bg-primary">Log4j2</span>
+                    <span class="badge bg-primary">BouncyCastle</span>
+                    <span class="badge bg-primary">React (in progress)</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/Krishna-FullStackJavaDeveloper/HashInk/tree/main" target="_blank" class="btn btn-dark btn-sm">
+                    <i class="bi bi-github me-1"></i> Code
+                  </a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo (WIP)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-card h-100">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc0OTUwNjM4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Real-Time Chat Application"
+                  class="w-100"
+                />
+                <div class="project-overlay"></div>
+              </div>
+              <div class="project-content">
+                <h4 class="fw-bold mb-3">Real-Time Chat Application</h4>
+                <p class="text-muted mb-3">
+                  WebSocket-based chat platform with group messaging, file
+                  sharing, and end-to-end encryption.
+                </p>
+                <div class="mb-3">
+                  <h6 class="fw-semibold mb-2">Key Features:</h6>
+                  <ul class="text-muted small">
+                    <li>Real-time messaging with WebSocket</li>
+                    <li>Group chat functionality</li>
+                    <li>File and media sharing</li>
+                    <li>Online presence indicators</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-primary">Java</span>
+                  <span class="badge bg-primary">Spring WebSocket</span>
+                  <span class="badge bg-primary">React</span>
+                  <span class="badge bg-primary">MongoDB</span>
+                  <span class="badge bg-primary">Redis</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-dark btn-sm">
+                    <i class="bi bi-github me-1"></i> Code
+                  </a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-3">Get In Touch</h2>
+          <div class="title-underline mx-auto mb-4"></div>
+          <p class="lead text-muted mx-auto" style="max-width: 700px">
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision.
+          </p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <h4 class="fw-bold mb-4">Contact Information</h4>
+
+            <div class="contact-info-item mb-4">
+              <div class="contact-icon bg-primary bg-opacity-10 text-primary">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <p class="text-muted small mb-1">Email</p>
+                <a
+                  href="mailto:krishnampandya@gmail.com"
+                  class="text-dark text-decoration-none fw-medium"
+                >
+                  krishnampandya@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-info-item mb-4">
+              <div class="contact-icon bg-primary bg-opacity-10 text-primary">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <p class="text-muted small mb-1">Phone</p>
+                <a
+                  href="tel:+12266376545"
+                  class="text-dark text-decoration-none fw-medium"
+                >
+                  +1 (226) 637-6545
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-info-item mb-4">
+              <div class="contact-icon bg-primary bg-opacity-10 text-primary">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <p class="text-muted small mb-1">Location</p>
+                <p class="text-dark mb-0 fw-medium">Ontario, Canada</p>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="fw-bold mb-3">Connect With Me</h5>
+              <div class="d-flex gap-3">
+                <a
+                  href="https://www.linkedin.com/in/krishnabhatt-fullstackdeveloper/"
+                  target="_blank"
+                  class="social-icon-lg bg-primary"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/Krishna-FullStackJavaDeveloper"
+                  target="_blank"
+                  class="social-icon-lg bg-dark"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-cta-box">
+              <h6 class="fw-bold mb-2">Let's Build Something Amazing!</h6>
+              <p class="text-muted small mb-0">
+                Whether you have a project in mind or just want to connect, feel
+                free to reach out. I'm always interested in hearing about new
+                opportunities and collaborations.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left">
+            <!-- FORM START -->
+        <form id="contactForm" class="contact-form">
+             <!-- Hidden Config -->
+          <input type="hidden" name="_subject" value="New Portfolio Message!">
+          <input type="hidden" name="_captcha" value="false">
+           <!-- Honeypot (spam protection) -->
+            <input type="text" name="_honey" style="display:none">
+
+          <input type="hidden" name="_next" value="#">
+            <!-- <form id="contactForm" class="contact-form"> -->
+                 <!-- Name -->
+              <div class="mb-4">
+                <label for="name" class="form-label fw-medium">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              
+           <!-- Email -->
+              <div class="mb-4">
+                <label for="email" class="form-label fw-medium"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+              <!-- Subject -->
+              <div class="mb-4">
+                <label for="subject" class="form-label fw-medium"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="subject"
+                  name="subject"
+                  placeholder="Project Inquiry"
+                  required
+                />
+              </div>
+              <!-- Message -->
+              <div class="mb-4">
+                <label for="message" class="form-label fw-medium"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control form-control-lg"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                <i class="bi bi-send-fill me-2"></i> Send Message
+              </button>
+                <!-- Success / Error Message -->
+            <div id="formStatus" class="mt-3 text-center"></div>
+            </form>
+            <!-- FORM END -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT SECTION END -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p class="mb-2">
+          <span>© 2026 Krishna Bhatt. Made with </span>
+          <i class="bi bi-heart-fill text-danger"></i>
+          <span> in Canada</span>
+        </p>
+        <p class="small mb-2">
+          Full Stack Java Developer | Software Engineer | Java Developer
+        </p>
+      </div>
     </footer>
-    <script>
-        document.getElementById("currentYear").textContent = new Date().getFullYear();
-    </script>
-    <!-- Media Modal -->
-<div id="mediaModal" class="media-modal">
-    <div class="media-content">
-        <span class="close-btn" onclick="closeMediaModal()">&times;</span>
-        <div id="mediaContainer"></div>
-    </div>
-</div>
-</body>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+
+   <script>
+const form = document.getElementById("contactForm");
+const statusDiv = document.getElementById("formStatus");
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/krishnampandya@gmail.com", {
+      method: "POST",
+      body: formData
+    });
+
+    if (response.ok) {
+      statusDiv.innerHTML = 
+        '<div class="alert alert-success">✅ Message sent successfully! I’ll get back to you soon.</div>';
+      form.reset();
+    } else {
+      throw new Error("Failed");
+    }
+
+  } catch (error) {
+    statusDiv.innerHTML = 
+      '<div class="alert alert-danger">❌ Something went wrong. Please try again later.</div>';
+  }
+});
+</script>
+
 </html>
