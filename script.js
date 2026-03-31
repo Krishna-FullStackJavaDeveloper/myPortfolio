@@ -129,13 +129,17 @@ if (skillsSection) {
         
 //         // Here you would typically send the data to a server
 //         // For now, we'll just show a success message
-        
+//          const mailtoLink = `mailto:krishnampandya@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+//     "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message
+//   )}`;
+//   window.location.href = mailtoLink;
 //         // Show success alert
 //         showAlert('Thank you for your message! I\'ll get back to you soon.', 'success');
         
 //         // Reset form
 //         contactForm.reset();
 //     });
+    
 // }
 
 // ========================================
