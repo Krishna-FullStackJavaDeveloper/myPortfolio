@@ -1089,7 +1089,7 @@
 
     <!-- Custom JS -->
     <script src="script.js"></script>
-    <script>
+  <script>
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
   const statusDiv = document.getElementById("formStatus");
@@ -1103,16 +1103,15 @@ document.addEventListener("DOMContentLoaded", function () {
       const response = await fetch("https://formsubmit.co/ajax/krishnampandya@gmail.com", {
         method: "POST",
         headers: {
-          'Accept': 'application/json'   // ✅ THIS FIXES YOUR ERROR
+          'Accept': 'application/json'
         },
         body: formData
       });
 
-      const result = await response.json();
-
-      if (result.success === true) {
+      // ✅ FIX: Don't parse JSON, just check response
+      if (response.ok) {
         statusDiv.innerHTML =
-          '<div class="alert alert-success">✅ Message sent successfully!</div>';
+          '<div class="alert alert-success">✅ Message sent successfully! I’ll get back to you soon.</div>';
         form.reset();
       } else {
         throw new Error("Failed");
@@ -1120,7 +1119,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     } catch (error) {
       statusDiv.innerHTML =
-        '<div class="alert alert-danger">❌ Failed to send message. Please try again.</div>';
+        '<div class="alert alert-danger">❌ Failed to send message. Please try again later.</div>';
     }
   });
 });
